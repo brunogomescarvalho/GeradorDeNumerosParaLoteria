@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números para Loteria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col + header">
+                <h1>Sorte em Loterias</h1>
+
+                <p>Abaixo você pode receber palpites para ganhar em premios de loterias. Escolha seus jogos e boa sorte.
+                </p>
+                <hr>
+            </div>
+
+        </div>
+        <div class="row justify-content-center m-5" id="grupo">
+
+            <div class="col-6">
+
+                <div class="card text-center">
+                    <h5 class="card-header">Mega-Sena</h5>
+                    <div class="card-body">
+                        <h5 class="card-title m-3">Clique no botão abaixo para receber seus números da sorte</h5>
+                        <div class="row text-center">
+                            <div class="col">
+                                <div class="card-text">
+                                    <p id="nr1"></p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="card-text">
+                                    <p id="nr2"></p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="card-text">
+                                    <p id="nr3"></p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="card-text">
+                                    <p id="nr4"></p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="card-text">
+                                    <p id="nr5"></p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="card-text">
+                                    <p id="nr6"></p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-success sm-3" type="button" id="btnGerarNrs"
+                                    (click)="gerarNumeroDaSorte()">Clique Aqui</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-success sm-3" type="button" id="btnLimpar"
+                                    (click)="limparJogo()">Limpar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="bilhete + col-4">
+                <div class="row">
+                    <div class="col + campo">
+                        <p id="1">01</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="2">02</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="3">03</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="4">04</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="5">05</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="6">06</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="7">07</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="8">08</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="9">09</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="10">10</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col + campo">
+                        <p id="11">11</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="12">12</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="13">13</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="14">14</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="15">15</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="16">16</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="17">17</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="18">18</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="19">19</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="20">20</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col + campo">
+                        <p id="21">21</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="22">22</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="23">23</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="24">24</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="25">25</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="26">26</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="27">27</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="28">28</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="29">29</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="30">30</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col + campo">
+                        <p id="31">31</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="32">32</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="33">33</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="34">34</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="35">35</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="36">36</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="37">37</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="38">38</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="39">39</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="40">40</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col + campo">
+                        <p id="41">41</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="42">42</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="43">43</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="44">44</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="45">45</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="46">46</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="47">47</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="48">48</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="49">49</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="50">50</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col + campo">
+                        <p id="51">51</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="52">52</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="53">53</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="54">54</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="55">55</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="56">56</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="57">57</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="58">58</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="59">59</p>
+                    </div>
+                    <div class="col + campo">
+                        <p id="60">60</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

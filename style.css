@@ -1,0 +1,41 @@
+.bilhete{
+  background-color:rgba(245, 229, 158, 0.714);
+  
+}
+
+.campo{
+    border: 1px;
+    width: 1px;
+    border-style: solid;
+    border-color:darkmagenta;
+    margin: 1px;
+    align-content: space-around;
+}
+.campo>p{
+  color:darkmagenta;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 10px;
+ 
+}
+
+.card-text>p{
+
+  
+    border-radius: 360%;
+    font-size: x-large; 
+    padding: 15px;
+    background-color:  #209869;
+    color:white
+}
+.card-header{
+    background: rgb(32,152,105);
+    background: linear-gradient(90deg, rgba(32,152,105,1) 35%, rgba(32,152,105,0.20772058823529416) 100%);
+}
+
+.header{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,49,121,1) 35%, rgba(255,171,0,0.7511379551820728) 100%);
+    color: white;
+}
+
